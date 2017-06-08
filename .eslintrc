@@ -1,0 +1,90 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "strict": [
+      0,
+      "global"
+    ],
+    "space-before-blocks": 1,
+    "space-infix-ops": 1,
+    "object-curly-spacing": [
+      0,
+      "always"
+    ],
+    "indent": [
+      1,
+      "tab"
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      0,
+      "never"
+    ],
+    "comma-dangle": [
+      0,
+      "always-multiline"
+    ],
+    "no-console": 0,
+    "no-var": [
+      2
+    ],
+    "no-empty": 1,
+    "no-unused-vars": 1,
+    "no-multi-assign": "off",
+    "no-restricted-syntax": "off",
+    "no-shadow": "warn",
+    "no-else-return": "off",
+    "space-before-function-paren": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off",
+    "react/sort-comp": ["warn", {
+    "order": [
+        "static-methods",
+        "lifecycle",
+        "render",
+        "everything-else"
+      ]
+    }],
+    "react/self-closing-comp": "warn",
+    "react/forbid-prop-types": "warn",
+    "react/prefer-stateless-function": "warn",
+    "import/prefer-default-export": "warn",
+    "import/no-webpack-loader-syntax": "warn"
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "airbnb"],
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "_": false,
+    "React": false,
+    "document": false,
+    "window": false
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/development.js"
+      }
+    }
+  }
+}
